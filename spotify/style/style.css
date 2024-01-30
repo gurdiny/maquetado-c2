@@ -1,0 +1,21 @@
+*{
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #1c1e1f;
+    padding: 50px;
+}
+
+h1, h2, h3, h4, p{
+    color: aliceblue;
+    text-align: justify;
+}
+
+a{
+    color: #117a37;
+}
+
+li{
+    color: aliceblue;
+}
