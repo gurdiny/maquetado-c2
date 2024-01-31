@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    background-color: #e3e3e3;
+    border: 3px solid #eee;
+    padding: 12px;
+    margin: 50px;/* Aplica para todo los lados arriba, abajo, izq y derecha*/
+   /* margin: 10px 20px; El primer valor es el estilo vertical y el segundo el horizontal*/
+    /*margin: 10px 5px 15px 40px; /*Se leen en el sentido de las manecillas del reloj, De arriba hacia abajo*/
+
+}
+
+/*
+    Selector hijo:
+    Busca los selectores que le indiques en forma de continua divididas por espacios
+*/
+#selectorHijo p{
+    color:blue;
+}
+
+
+/*
+    Selector hijos directos:
+*/
+#selectorHijoDirecto > p{
+    color:red;
+}
+
+
+/*
+    Selector Hermanos
+*/
+
+#selectorHermanoGenerado h2 ~ button{
+    background-color: turquoise;
+    color: #eee;
+    padding: 10px 5px;
+}
+
+
+
+/*
+    Selector Hermano adyacente: Solo aplica Solo si hay una coincidencia igual
+*/
+#hermanoAdyacente h2 + h3{
+    color: yellow;
+}
+
+/*
+Selecctor de atributo
+Selecciona a los atributos dentro de las etiquetas de html
+*/
+a[href="https://kodemia.mx/"],a[href="https://google.com/"] {
+    text-decoration: none;
+}
+
+input[type="text"]{
+    background-color: thistle;
+    padding: 30px;
+}
+
+
+/*
+Pseudo Selectores
+Selecciona a los atributos dentro de las etiquetas de html
+*/
+
+#pseudoSelecotres .btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+/*Hover:Cuando pasas el mouse en un elemento*/
+#pseudoSelecotres .btn:hover{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Visited: Enlaces visitados dentro del sitio*/
+#enlaces a:visited{
+    color: aquamarine;
+}
+
+/*link: Enlaces sin ser visitados dentro del sitio*/
+#enlaces a:link{
+    color:blueviolet;
+}
+
+
+/*PseudoSelecotores Por Selección*/
+.caja{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+    color: #eee;
+}
+
+#listas div:first-child{
+    background-color: black;
+}
+
+#listas div:last-child{
+    background-color: aquamarine;
+}
+
+#listas div:nth-child(3){
+    background-color: bisque;
+    color:black;
+}
