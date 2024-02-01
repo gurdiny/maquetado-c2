@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.caja{
+    width: 100px;
+    height: 60px;
+    background-color: brown;
+    margin: 20px 0;
+}
+
+/*Queda en su lugar*/
+.cajaRelativa{
+    position: relative;
+    margin-left: 60px;
+
+}
+
+/*Queda hasta arriba de la pagina*/
+.cajaAbsoluta{
+    position:absolute;
+   
+}
+
+/*Queda en una posicion fija en la posicion donde se deja*/
+.cajaFixed{
+    position: fixed;
+    background-color: #515151 ;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+.cajaRelativa2{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+
+}
+.cajaAbsoluta2{
+    position: absolute;
+    background-color: blue;
+}
+
+/*Practica 1 clase 4*/
+.box{
+    position: relative;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+
+.cajap.box1{
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 0;
+    margin: 50px 30px;
+    z-index: 99;
+    border: 1px solid black;
+ 
+}
+
+.cajap.box2{
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+    ;
+    background-color: aliceblue;
+    right: 0;
+    margin: 50px 30px;
+    z-index: 99;
+    border: 1px solid black;
+ 
+}
+
+.cajap.box3{
+
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-top: 0%;
+    left: 25%;
+    top: 35%;
+ 
+}
+
+.mini{
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+
+.minibox1{
+    position: absolute;
+    left: 0;
+    margin: 50px 30px;
+    z-index: 99;
+    border: 1px solid black;
+}
+
+.minibox2{
+    position: absolute;
+    right: 0;
+    margin: 50px 30px;
+    z-index: 99;
+    border: 1px solid black;
+}
+
+.minibox3{
+    position: absolute;
+    margin-top: 30%;
+    left: 40%;
+    top: 35%;
+}
+
+/*Sticky
+Tiene que tener un contenedor que este afuera del stiky
+Tiene que tener un top y un left o un rigt
+*/
+.contenedorStiky{
+    border: solid 1px blue;
+}
+
+.stycky{
+    top: 0;
+    left: 0;
+    position: sticky;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.btn{
+    background-color: aqua;
+    color: aliceblue;
+    padding: 5px;
+    border: 1px solid;
+    /*transition: all 500ms ease;*/
+    transition: background-color  300ms ease, transform 300ms ease, 
+    color 300ms ease;
+    cursor: pointer;
+   
+}
+
+
+.btn:hover{
+    background-color: #fff;
+    color: aqua;
+    border: 1px solid aqua;
+    transform: scale(1.2);
+}
+
+img{
+    transition: filter 300ms ease;
+}
+img:hover{
+    filter: sepia();
+}
+
+/*Animaciones*/
+
+.animacionContainer{
+    margin-top: 5%;
+    width: 400px;
+    height: 250px;
+    background-color: aliceblue;
+    position: relative;
+    padding: 20px;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    animation: moverCirculo 5s linear infinite;
+}
+
+@keyframes moverCirculo{
+    0%{
+        left: 0;
+        background-color: aquamarine;
+    }
+    50%{
+        left: 400px;
+        background-color: blueviolet;
+    }
+    100%{
+        left: 0;
+        background-color: red;
+    }
+}
