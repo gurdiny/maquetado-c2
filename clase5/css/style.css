@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.noResponsivo{
+    width: 450px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.responsivo{
+    margin-top: 20px;
+    width: 80%;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.cajaMorada{
+    background-color:aqua;
+}
+
+/*Media Queries*/
+/*Max Width es el maximo a donde llega*/
+
+/*
+@media screen and (max-width:600px){
+    body{
+        background-color: black;
+    }
+ }
+
+*/
+
+
+/*Medida para tablets*/
+@media screen and (min-width:760px){
+    
+}
+
+
+/*Medida para Laptops*/
+@media screen and (min-width:992px){
+    
+}
+
+
+
+/*Medida para Laptop FullHD*/
+@media screen and (min-width:1440px){
+    
+}
