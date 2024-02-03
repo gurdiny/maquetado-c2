@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cajaRoja{
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+}
+
+.containerFlex{
+    border: 1px solid black;
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    
+}
+
+.flexStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+}
+
+.flexCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.flexAround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.flexBetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.flexEvenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
