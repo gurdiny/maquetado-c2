@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+table {
+    color: #fff;
+    text-align: justify;
+    margin: 3% 0px;
+}
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #1d2a35;
+    margin-bottom:3%;
+}
+
+/*Mobile*/
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuprimary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.btn.logIn{
+    background-color: #D9EEE1;
+    color: #1d2a35;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+.btn.logIn:hover{
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+.list{
+    background-color: #282A35;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+.list ul {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.list ul a{
+   color: #fff;
+   margin: 10px;
+   text-decoration: none;
+}
+
+
+main.container {
+    display: flex;
+    flex-direction: column;
+}
+
+section.content {
+    margin-bottom: 40%;
+}
+
+.content .info{
+    padding: 20px 10px;
+}
+
+.info{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+.info li{
+    color: #fff;
+    list-style: disc;
+}
+
+.info ul {
+
+    margin-left: 20px;
+}
+
+.content .info h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.content .info h4{
+    font-size: 16;
+    color: #fff;
+}
+.content .info p{
+    color: #fff;
+    font-size: 14px;
+    margin: 2% 0px;
+}
+/*Escritorio*/
+@media screen and (min-width:922px) {
+   
+    .menuprimary{
+    background: #282A35;
+    }
+    main.container {
+        flex-direction: row;
+    }
+
+    .container .list {
+        flex-grow: 1;
+    }
+
+    .container .content {
+        flex-grow: 4;
+    }
+
+    .list ul {
+        height: 100vh;
+        flex-direction: column;
+    }
+    
+}
