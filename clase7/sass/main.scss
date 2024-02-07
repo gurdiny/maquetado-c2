@@ -1,0 +1,28 @@
+@import 'global';
+
+body{
+    background-color: $blackColor;
+}
+
+
+section{
+    width: 80%;
+    @include flexComumnCentre();
+    .post{
+        padding: $postSpacing;
+        @include flexComumnCentre();
+        img{
+            border-radius: 50%;
+            &:hover{
+                width: 100px;
+                height: 50px;
+            }
+        }
+        .content{
+            p{
+                color: #fff;
+                font-size: 40px;
+            }
+        }
+    }
+}

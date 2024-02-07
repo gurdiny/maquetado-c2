@@ -1,0 +1,31 @@
+h1{
+    color:$whiteColor;
+    font-size: 36px;
+}
+
+.hero {
+    @include centerHero();
+
+    .contentInt{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p{
+            color: aliceblue;
+            text-align: center;
+            font-size: 18px;
+        }
+        button{
+            @include botones();
+            &:hover{
+                background-color: transparent;
+                color: $whiteColor;
+            }
+        }
+
+    }
+}    
+    
+
+
