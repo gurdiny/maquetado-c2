@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+.cols{
+    margin-top: 20px;
+    .miCol{
+        background-color: green;
+        border: 1px solid green;
+        color: #fff;
+    }
+}
+
+.ractica{
+    background-color: aquamarine;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .dif{
+        border: solid 1px black;
+    }
+}

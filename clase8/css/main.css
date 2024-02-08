@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+
+.cols {
+  margin-top: 20px;
+}
+.cols .miCol {
+  background-color: green;
+  border: 1px solid green;
+  color: #fff;
+}
+
+.ractica {
+  background-color: aquamarine;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.ractica .dif {
+  border: solid 1px black;
+}/*# sourceMappingURL=main.css.map */
